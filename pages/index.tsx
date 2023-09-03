@@ -64,12 +64,20 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               about my journey as an Entrepreneur. */}
               Have a good read! <span className="waving-hand text-2xl">👋🏻</span>
             </p>
-            <p className="leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
+            <p className="italic leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
               <Link
                 href="/about"
                 className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
               >
                 <a>Read the rest of my bio &rarr;</a>
+              </Link>
+            </p>
+            <p className="italic leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
+              <Link
+                href="/now"
+                className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
+              >
+                <a>What am I doing now? &rarr;</a>
               </Link>
             </p>
           </div>

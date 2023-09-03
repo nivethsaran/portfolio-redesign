@@ -11,19 +11,19 @@ export default function Projects() {
       <div className="mt-6 divide-y divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Projects
+            stuff I spent a lot of time on!
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             A collection of projects I've worked on.
           </p>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            PS : I'm still designing this page, please visit my{' '}
-            <Link href="https://github.com/reubence" passHref>
+            You can also visit my{' '}
+            <Link href="https://github.com/emsesc" passHref>
               <span className="company font-bold text-primary-500 hover:cursor-pointer">
-                GitHub
+                GitHub &rarr;
               </span>
             </Link>{' '}
-            for better understanding of my work or skills.
+            for a complete showcase of my code!
           </p>
         </div>
         <div className="container py-12">
@@ -35,6 +35,8 @@ export default function Projects() {
                 description={d.description}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                demo={d.demo}
+                tags={d.tags}
               />
             ))}
           </div>

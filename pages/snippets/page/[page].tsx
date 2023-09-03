@@ -59,7 +59,7 @@ export default function PostPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Snippets"
+        title="My Code Snippets"
       />
     </>
   )
