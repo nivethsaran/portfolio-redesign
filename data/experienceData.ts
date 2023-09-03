@@ -1,44 +1,68 @@
 const experienceData = [
   {
-    title: 'Technical Co-Founder',
-    company: 'destro.ai',
-    location: 'Delhi, India',
-    range: 'Jan 2021 - Apr 2022',
-    url: 'https://destro.ai/',
+    title: 'Partner Security Advocate (Additional Role)',
+    company: 'Cisco',
+    location: 'Bengaluru, Karnataka, India',
+    range: 'Jan 2021 - Aug 2021',
+    url: 'https://www.cisco.com/',
+    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+  },
+  {
+    title: 'Software Engineer II',
+    company: 'Cisco',
+    location: 'Bengaluru, Karnataka, India',
+    range: 'Jan 2021 - Aug 2021',
+    url: 'https://www.cisco.com/',
+    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+  },
+  {
+    title: 'Scrum Lead (Additional Role)',
+    company: 'Cisco',
+    location: 'Coimbatore, TamilNadu, India (Remote)',
+    range: 'Jan 2021 - Aug 2021',
+    url: 'https://www.cisco.com/',
+    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Cisco',
+    location: 'Bengaluru, Karnataka, India',
+    range: 'Jan 2021 - Aug 2021',
+    url: 'https://www.cisco.com/',
+    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+  },
+  {
+    title: 'Technical Undergraduate Intern',
+    company: 'Cisco',
+    location: 'Coimbatore, TamilNadu, India (Remote)',
+    range: 'Jan 2021 - Aug 2021',
+    url: 'https://www.cisco.com/',
+    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+  },
+  {
+    title: 'Android App Developer',
+    company: 'ANOKHA',
+    location: 'Coimbatore, TamilNadu, India',
+    range: 'Oct 2018 - Feb 2019',
+    url: 'https://anokha.amrita.edu',
     text1:
-      'destro.ai intended to democratize Artificial Intelligence & Data Analytics by providing tools to a normal person, with no background in coding, allowing  him/her to solve any problem through data science and AI.',
-    text2: `We built products and solutions with AI at it's core that help businesses automate and optimize business outcomes`,
+      'Anokha, the national techfest of Amrita Vishwa Vidyapeetham Coimbatore, is a 3-day congregation of some of the brightest minds in India.',
+    text2: 'I contributed in the development of mobile application for Anokha Techfest',
   },
   {
-    title: 'Technical Co-Founder',
-    company: 'Practitionr',
-    location: 'Delhi, India',
-    range: 'May 2021 - Jan 2022',
-    url: 'https://practitionr.com/',
-    text1:
-      'Practitionr was born out of gratitude for the services rendered by wellness practitioners. It is a platform that provides them with all the resources they need to succeed at their business.',
+    title: 'Android App Dev Mentor',
+    company: 'Mango Education',
+    location: 'Coimbatore, TamilNadu, India',
+    range: 'May 2018',
+    url: 'http://themango.co',
+    text1: `Mango Education seeks to nurture and grow the leaders of tomorrow who are problem solvers, researchers and innovators, in an integrated approach that involves activity based, experiential and interdisciplinary learning.`,
     text2:
-      'We created an automated practice management portal called Prottl that provides a platform for independent practitioners to build a personal brand and manage their practice efficiently. ',
-  },
-  {
-    title: 'Data Scientist',
-    company: 'Neo Kumfurt Solutions',
-    location: 'Delhi, India',
-    range: 'Nov 2020 - Feb 2021',
-    url: 'https://hops.healthcare/',
-    text1: 'A leading pet-care pharmaceutical company operating across 3 countries.',
-    text2:
-      'My job included proposing solutions and strategies to address business challenges and providing foundation for data-driven decision making through various Predictive Modelling techniques.',
-  },
-  {
-    title: 'Data Scientist',
-    company: 'Jio Creative Labs',
-    location: 'Mumbai, India',
-    range: 'May 2020 - Nov 2020',
-    url: 'http://www.jiocreativelabs.com/',
-    text1: `Jio is India's largest network provider. I got to work with their creative arm under the brand Jio Creative Labs.`,
-    text2:
-      'I built complex ranking algorithms, a Jio Vault to access and store real-time Information at scale, performed Keyword extraction and Sentiment Analysis to dictate key business decisions. I also helped develop and deliver an Augmented Reality app built using Unity 3D.',
+      'I helped conduct a App Development workshop for students of ages 11-14. Our team helped the students understand the basic concepts of app development and provide them a hands-on session with tools like MIT App Inventor, Sketchware etc.',
   },
 ]
 

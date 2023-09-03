@@ -30,7 +30,7 @@ we still enforce color-scheme: dark, despite the user preference */
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   .company:hover {
-    box-shadow: inset 200px 0 0 0 #14b8a6;
+    box-shadow: inset 400px 0 0 0 #14b8a6;
     color: white;
   }
 }
@@ -83,6 +83,15 @@ input:-webkit-autofill:focus {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+.giscus {
+  width: 100%;
+}
+
+.giscus-frame {
+  width: 100%;
+  color-scheme: normal;
 }
 
 @keyframes wave-animation {

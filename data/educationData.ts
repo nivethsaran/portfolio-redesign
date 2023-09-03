@@ -1,15 +1,14 @@
 const educationData = [
   {
-    title: 'Data Science Engineering',
-    company: 'NMIMS University',
-    location: 'Mumbai, India',
-    range: 'Jul 2017 - Apr 2021',
-    url: 'https://www.nmims.edu/',
-    text1: 'Graduated with CGPA of 3.2',
+    title: 'Bachelor of Technology in Computer Science Engineering',
+    company: 'Amrita Vishwa Vidyapeetham',
+    location: 'Tamilnadu, India',
+    range: 'Jun 2017 - Jul 2021',
+    url: 'https://www.amrita.edu/',
+    text1: 'Graduated with CGPA of 9.19',
     text2:
-      'Spent 4 years learning and mastering Natural Language Processing (NLP), Machine Learning, Statistics and Programming.',
-    text3:
-      'Developed functions for automatically extracting important elements from reports using BioBERT and Regex.',
+      'Skills: Agile Web Development · Agile & Waterfall Methodologies · AWS Lambda · Database Management System (DBMS) · Microservices',
+    text3: '',
   },
 ]
 

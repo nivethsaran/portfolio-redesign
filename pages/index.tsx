@@ -26,29 +26,27 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
-        <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-14 xl:grid-cols-5">
+        <div className="grid grid-cols-1 space-y-10 py-4 text-center sm:space-y-5 sm:py-14">
           <div className="col-span-3 justify-center space-y-5 align-middle">
-            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-40">
+            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-28">
               <span className="relative inline-block -rotate-6 text-primary-500">
                 <Link
-                  href="https://twitter.com/reubence_"
+                  href="https://linktr.ee/niveth.dev"
                   className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8 sm:text-xl"
                 >
-                  @reubence
+                  @nivethsaran
                 </Link>
               </span>
             </span>
             <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-background-color dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
-              Reuben
+              Niveth
               <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-14">
                 ^
               </span>
-              Rapose
+              Saran
             </h1>
             <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
-              Welcome to my Digital Garden – I am a Data Scientist by training and Full-Stack
-              Developer by passion who loves building for the web & mobile. Also sometimes for the
-              toaster.{' '}
+              I'm a dedicated Backend Developer with a flair for innovation and a passion for open{' '}
               {/* In my
               free time, I like developing{' '}
               <Link
@@ -75,13 +73,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               </Link>
             </p>
           </div>
-          {siteMetadata.newsletter.provider !== '' && (
-            <div className="col-span-2 flex xl:items-center xl:justify-center xl:pl-6">
-              <NewsletterForm />
-            </div>
-          )}
         </div>
-
         <h1 className="my-4 mt-16 pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
           Recent Posts{' '}
         </h1>
