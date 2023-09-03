@@ -21,15 +21,15 @@ export default function Footer() {
             </div>
             <div>{` • `}</div>
             {/* <Link href="/">{siteMetadata.title}</Link> */}
-            <Link
+            {/* <Link
               href={siteMetadata.rss}
               className="hover:text-primary-500 hover:underline hover:underline-offset-4"
             >
               RSS Feed
-            </Link>
+            </Link> */}
             <div>{` • `}</div>
             <Link
-              href="https://github.com/reubence/reubence.com"
+              href="https://github.com/nivethsaran/nivethsaran.github.io"
               className="hover:text-primary-500 hover:underline hover:underline-offset-4"
             >
               Clone Theme
