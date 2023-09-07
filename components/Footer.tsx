@@ -19,7 +19,7 @@ export default function Footer() {
             <div>
               {`© ${new Date().getFullYear()}`} {siteMetadata.author}
             </div>
-            <div>{` • `}</div>
+            {/* <div>{` • `}</div> */}
             {/* <Link href="/">{siteMetadata.title}</Link> */}
             {/* <Link
               href={siteMetadata.rss}
@@ -32,7 +32,7 @@ export default function Footer() {
               href="https://github.com/nivethsaran/nivethsaran.github.io"
               className="hover:text-primary-500 hover:underline hover:underline-offset-4"
             >
-              Clone Theme
+              Source Code
             </Link>
           </div>
         </div>

@@ -25,7 +25,7 @@ import rehypePresetMinify from 'rehype-preset-minify'
 
 const root = process.cwd()
 
-export function getFiles(type: 'blog' | 'authors' | 'snippets') {
+export function getFiles(type: 'blog' | 'authors' | 'snippets' | 'now') {
   const prefixPaths = path.join(root, 'data', type)
   const files = getAllFilesRecursively(prefixPaths)
   // Only want to return blog/path and ignore root, replace is needed to work on Windows
@@ -43,7 +43,7 @@ export function dateSortDesc(a: string, b: string) {
 }
 
 export async function getFileBySlug<T>(
-  type: 'authors' | 'blog' | 'snippets',
+  type: 'authors' | 'blog' | 'snippets' | 'now',
   slug: string | string[]
 ) {
   const mdxPath = path.join(root, 'data', type, `${slug}.mdx`)

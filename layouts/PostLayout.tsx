@@ -33,8 +33,9 @@ interface Props {
 }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
-  const { slug, fileName, date, title, tags } = frontMatter
-
+  const { slug, fileName, date, title } = frontMatter
+  let { tags } = frontMatter
+  tags = [...new Set(tags)]
   return (
     <SectionContainer>
       <BlogSEO

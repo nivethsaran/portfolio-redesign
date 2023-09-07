@@ -5,6 +5,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
+import Tag from '@/components/Tag'
 
 const MAX_DISPLAY = 3
 
@@ -88,7 +89,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <ul className="flex flex-col gap-10 dark:border-gray-700 md:flex-row">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
-            const { slug, date, title, summary, tags, readTime } = frontMatter
+            const { slug, date, title, summary, readTime } = frontMatter
+            let { tags } = frontMatter
+            tags = [...new Set(tags)]
             return (
               <Link
                 href={`/blog/${slug}`}
@@ -112,7 +115,13 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         </div>
                       </div>
                     </div>
-                    <div className="mt-10 flex">
+                    <h3 className="pt-4">{summary}</h3>
+                    <div className="flex flex-wrap pt-2">
+                      {tags.map((tag) => (
+                        <Tag key={tag} text={tag} />
+                      ))}
+                    </div>
+                    <div className="mt-5 flex">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

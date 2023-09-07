@@ -42,6 +42,15 @@ export default function BlogListLayout({
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
+  let tagsList = []
+  displayPosts.forEach((frontMatter, index) => {
+    const { tags } = frontMatter
+    tags.forEach((tag) => {
+      tagsList.push(tag)
+    })
+  })
+  tagsList = [...new Set(tagsList)]
+
   return (
     <>
       <div className="mt-6 divide-y px-2 sm:px-0">
@@ -72,11 +81,18 @@ export default function BlogListLayout({
               />
             </svg>
           </div>
+          <div>
+            {tagsList.map((tag) => {
+              return <Tag key={tag} text={tag} />
+            })}
+          </div>
         </div>
         <ul className="grid grid-cols-1 gap-10 py-8 dark:border-gray-700 md:grid-cols-3">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter, index) => {
-            const { slug, date, title, summary, tags, readTime } = frontMatter
+            const { slug, date, title, summary, readTime } = frontMatter
+            let { tags } = frontMatter
+            tags = [...new Set(tags)]
             return (
               <Link
                 href={`/blog/${slug}`}
@@ -99,6 +115,12 @@ export default function BlogListLayout({
                           </h2>
                         </div>
                       </div>
+                    </div>
+                    <h3 className="pt-4">{summary}</h3>
+                    <div className="flex flex-wrap pt-2">
+                      {tags.map((tag) => (
+                        <Tag key={tag} text={tag} />
+                      ))}
                     </div>
                     <div className="mt-10 flex">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">

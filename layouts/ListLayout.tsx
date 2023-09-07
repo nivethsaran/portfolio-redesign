@@ -56,7 +56,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary } = frontMatter
+            let { tags } = frontMatter
+            tags = [...new Set(tags)]
             return (
               <li key={slug} className="py-12">
                 <article>
