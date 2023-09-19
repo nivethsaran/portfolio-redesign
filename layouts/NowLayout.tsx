@@ -41,12 +41,10 @@ export default function NowLayout({ children, frontMatter }: Props) {
                 <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                   🌻
                 </h1>
-                <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-                  emily chen
-                </h3>
-                <div className="text-gray-500 dark:text-gray-400">obsessing over A24 films</div>
+                <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">${name}</h3>
+                <div className="text-gray-500 dark:text-gray-400">learning new things</div>
                 <div className="text-gray-500 dark:text-gray-400">
-                  currently at <b>Mississippi</b>
+                  currently at <b>Bangalore</b>
                 </div>{' '}
               </div>
             </div>

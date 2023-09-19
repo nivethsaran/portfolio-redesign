@@ -45,7 +45,6 @@ const Card = ({ title, description, imgSrc, href, demo, tags }) => (
             ))}
           </div>
           <div className="mb-3 flex space-x-4">
-            <SocialIcon kind="github" href={href} size={6} />
             {demo && (
               <Link
                 href={demo}
