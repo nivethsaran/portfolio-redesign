@@ -31,7 +31,7 @@ const Card = ({ title, description, imgSrc, href, demo, tags }) => (
               title
             )}
           </h2>
-          <p className="prose prose-lg mb-3 max-w-none text-gray-500 sm:prose-xl dark:text-gray-400">
+          <p className="prose prose-lg mb-3 max-w-none text-gray-500 dark:text-gray-400 sm:prose-xl">
             {description}
           </p>
           <div className="flex flex-wrap pb-5 pt-2">
