@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://portfolio.niveth.dev',
   siteRepo: 'https://github.com/nivethsaran/portfolio-redesign',
-  rss: '/public/feed.xml',
+  rss: '/feed.xml',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
@@ -18,6 +18,7 @@ const siteMetadata = {
   facebook: 'https://facebook.com/nivethsaran',
   youtube: 'https://youtube.com/nivethsaran',
   linkedin: 'https://www.linkedin.com/in/nivethsaran',
+  bluesky: 'https://bsky.app/profile/niveth.dev',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

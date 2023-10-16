@@ -14,19 +14,20 @@ export default function Footer() {
             {/* <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} /> */}
             <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
             <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
+            {/* <SocialIcon kind="bluesky" href={siteMetadata.bluesky} size={6} /> */}
           </div>
           <div className="mb-2 mt-2 flex flex-col space-x-2 text-center text-sm text-gray-500 dark:text-gray-400 sm:mt-0 sm:flex-row">
             <div>
               {`© ${new Date().getFullYear()}`} {siteMetadata.author}
             </div>
-            {/* <div>{` • `}</div> */}
+            <div>{` • `}</div>
             {/* <Link href="/">{siteMetadata.title}</Link> */}
-            {/* <Link
+            <Link
               href={siteMetadata.rss}
               className="hover:text-primary-500 hover:underline hover:underline-offset-4"
             >
               RSS Feed
-            </Link> */}
+            </Link>
             <div>{` • `}</div>
             <Link
               href="https://github.com/nivethsaran/nivethsaran.github.io"

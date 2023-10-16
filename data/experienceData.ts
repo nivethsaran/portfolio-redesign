@@ -37,8 +37,10 @@ const experienceData = [
     location: 'Bengaluru, Karnataka, India',
     range: 'Nov 2022 - Oct 2023',
     url: 'https://www.cisco.com/',
-    text1: 'Did a 6 month internship, building for the Sub Management team', //TODO Edit this
-    text2: 'I contributed in the development of mobile application for Anokha Techfest',
+    text1:
+      'I was assigned the task of redesigning a backend API including its data model to minimize failures during data processing and improving fallback and monitoring mechanisms',
+    text2:
+      'I built a tool which helped migrate all app secrets to a new secret management portal which integrated with the kubernetes deployment environment',
   },
   {
     title: 'Software Engineer',
