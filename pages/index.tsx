@@ -47,7 +47,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               Saran
             </h1>
             <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
-              I'm a dedicated Backend Developer with a flair for innovation and a passion for open{' '}
+              A dedicated Backend Developer with a flair for innovation, crafting exceptional
+              digital experiences.
               {/* In my
               free time, I like developing{' '}
               <Link
