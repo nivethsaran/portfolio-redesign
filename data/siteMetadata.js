@@ -6,9 +6,9 @@ const siteMetadata = {
     'Niveth Saran is a Software Engineer working with Cisco Systems specialising in the domain of SaaS and Subscriptions Management. ✌︎',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://niveth.dev',
+  siteUrl: 'https://portfolio.niveth.dev',
   siteRepo: 'https://github.com/nivethsaran/portfolio-redesign',
-  // rss: 'https://niveth.dev/feed.xml',
+  rss: '/public/feed.xml',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
@@ -24,11 +24,11 @@ const siteMetadata = {
     // content security policy in the `next.config.js` file.
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
-  // newsletter: {
-  //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
-  //   // Please add your .env file and modify it according to your selection
-  //   provider: 'mailchimp',
-  // },
+  newsletter: {
+    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
+    // Please add your .env file and modify it according to your selection
+    provider: 'mailchimp',
+  },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
     // content security policy in the `next.config.js` file.
