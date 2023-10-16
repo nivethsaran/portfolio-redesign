@@ -4,6 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import { Analytics } from '@vercel/analytics/react'
 import NewsletterForm from '@/components/NewsletterForm'
 import Tag from '@/components/Tag'
 
@@ -164,6 +165,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             </Link>
           </div>
         )}
+        <Analytics />
       </div>
     </>
   )
