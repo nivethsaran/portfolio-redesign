@@ -54,7 +54,7 @@ export default function BlogListLayout({
   return (
     <>
       <div className="mt-6 divide-y px-2 sm:px-0">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
@@ -116,7 +116,7 @@ export default function BlogListLayout({
                         </div>
                       </div>
                     </div>
-                    <h3 className="pt-4">{summary}</h3>
+                    <h3 className="pt-4 text-gray-500 dark:text-gray-400">{summary}</h3>
                     <div className="flex flex-wrap pt-2">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />

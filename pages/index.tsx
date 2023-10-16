@@ -115,7 +115,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         </div>
                       </div>
                     </div>
-                    <h3 className="pt-4">{summary}</h3>
+                    <h3 className="pt-4 text-gray-500 dark:text-gray-400">{summary}</h3>
                     <div className="flex flex-wrap pt-2">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />

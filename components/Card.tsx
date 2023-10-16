@@ -22,7 +22,7 @@ const Card = ({ title, description, imgSrc, href, demo, tags }) => (
           />
         }
         <div className="p-6">
-          <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
+          <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-gray-800 dark:text-gray-400">
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
                 {title}
@@ -31,14 +31,14 @@ const Card = ({ title, description, imgSrc, href, demo, tags }) => (
               title
             )}
           </h2>
-          <p className="prose prose-lg mb-3 max-w-none text-gray-500 dark:text-gray-400 sm:prose-xl">
+          <p className="prose prose-lg mb-3 max-w-none text-gray-500 sm:prose-xl dark:text-gray-400">
             {description}
           </p>
           <div className="flex flex-wrap pb-5 pt-2">
             {tags.map((tag) => (
               <a
                 key={tag}
-                className="m-1 rounded-lg border border-primary-500 py-1 px-3 text-sm font-medium uppercase text-primary-500 transition duration-500 ease-in-out"
+                className="m-1 rounded-lg border border-primary-500 px-3 py-1 text-sm font-medium uppercase text-primary-500 transition duration-500 ease-in-out"
               >
                 {tag.split(' ').join('-')}
               </a>
