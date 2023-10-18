@@ -19,6 +19,7 @@ const siteMetadata = {
   youtube: 'https://youtube.com/nivethsaran',
   linkedin: 'https://www.linkedin.com/in/nivethsaran',
   bluesky: 'https://bsky.app/profile/niveth.dev',
+  resume: 'https://drive.google.com/file/d/1SD0yEAflRVJQdCjj6QkaWrwoEN1d4aNm/view',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

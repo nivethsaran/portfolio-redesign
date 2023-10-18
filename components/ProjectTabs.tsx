@@ -18,7 +18,7 @@ const gradients = {
 }
 
 import Container from './Container'
-import projectsData from '@/data/projectsData'
+import projectsData from '@/data/projectsData.1'
 const features = [
   {
     title: 'Payroll',
