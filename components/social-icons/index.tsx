@@ -5,6 +5,7 @@ import Youtube from './youtube.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import BlueSky from './blue-sky.svg'
+import Resume from './resume.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -16,6 +17,7 @@ const components = {
   linkedin: Linkedin,
   twitter: Twitter,
   bluesky: BlueSky,
+  resume: Resume,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
